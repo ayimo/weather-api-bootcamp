@@ -2,6 +2,54 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  background-image: url(../images/sky.gif);
+  background-repeat: repeat-x;
+  background-color: rgba(184, 199, 200, 1);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amita');
+h1{
+    font-family: Amita, cursive;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amita');
+label{
+    font-family: Amita, cursive;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+#temp{
+    font-family: Cinzel, serif;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(25, 230, 66);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+input {
+     padding: 4px;
+     font-size: 16px;
+     border-width: 0px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 7px;
+     box-shadow: 0px 0px 8px rgba(66,66,66,.75);
+     text-shadow: 0px 0px 5px rgba(66,66,66,.0);
+}
+ input:focus {
+     outline:none;
+}
+
 .container{
   height: 100vh;
   display: flex;
@@ -10,15 +58,44 @@
   justify-content: center;
   gap: 20px;
 }
+
 form{
   display: flex;
   gap: 15px;
 }
+
 .btn-container{
   display: flex;
   gap: 15px;
   flex-direction: row;
 }
+
 input{
   text-align: center;
+}
+
+Button {
+	box-shadow:inset -3px -1px 11px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:13px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:8px 17px;
+	text-decoration:none;
+	text-shadow:-2px 2px 3px #528ecc;
+  outline: none;
+}
+Button:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+Button:active {
+	position:relative;
+	top:1px;
 }

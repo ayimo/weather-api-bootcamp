@@ -8,7 +8,7 @@ const weather={
     const city = document.getElementById("city").value;
     const country = document.getElementById("country").value;
     const units = whichUnit(e);
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=d90ff8cf2b9f828e5633fd9ca45f0634&units=${units}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=0f8d637a2552fece8a600d7f063c3a3d&units=${units}`)
       .then(response =>response.json())
       .then(data =>{
         if(units =="imperial"){
